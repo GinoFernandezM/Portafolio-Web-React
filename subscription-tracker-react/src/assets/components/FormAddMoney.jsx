@@ -7,7 +7,7 @@ const FormAddMoney = ({setCount, setIsValid}) => {
 
   const handleForm = e => {
     e.preventDefault();
-    console.log(input)
+    //console.log(input)
     if(input==='' || Number(input) < 0){
       setError(true)
       return;
