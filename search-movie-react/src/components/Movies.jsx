@@ -1,10 +1,9 @@
 import React, { useContext } from 'react'
-import { DataContext } from '../assets/context/DataContext'
+import { DataContext } from '../context/DataContext'
 import ItemMovie from './ItemMovie'
 
 const Movies = () => {
   const {isLoading, data} = useContext(DataContext)
-  //const {setQuery, error} = useContext(DataContext)
 
   return (
     <div className='movies-content'>

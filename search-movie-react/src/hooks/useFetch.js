@@ -20,7 +20,6 @@ export const useFetch = (params) => {
                     setError(true)
                 }
                 setIsLoading(false)
-                console.log(json)
             })
             .catch(error => console.log(error))
     }
