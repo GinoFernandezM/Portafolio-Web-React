@@ -1,7 +1,9 @@
 import React from 'react'
 import {moneyFormat} from "../../helpers"
+
+
 const SingleItem = ({type, price, id, eliminarItem, editItem, spent, setSpent}) => {
-  const urlImage = `src/img/${type}.png`
+  const urlImage = `/${type}.png`
 
   const handleDelete = e => {
     const answer = window.confirm(`Seguro que deseas borrar tu subscripcion de ${type}`)
