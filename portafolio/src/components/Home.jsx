@@ -1,16 +1,19 @@
 import React from "react";
-import HeroImage from "../assets/heroImage.png";
+import HeroImage from "../assets/perfil3.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 
 const Home = () => {
+  //const isAboveMediumScreens = 
+
   return (
     <div
       name="home"
-      className="h-screen w-full bg-[#121112]"
+      className="h-screen w-full bg-[#14141f]"
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-        <div className="flex flex-col justify-center h-full">
+      <div className=" w-5/6 m-auto flex flex-col justify-evenly items-center h-full px-2 md:flex-row">
+
+        <div className="flex flex-col justify-center h-full mr-[0px]">
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
             I'm a Full Stack Developer
           </h2>
@@ -19,13 +22,12 @@ const Home = () => {
             Currently, I love to work on web application using technologies like
             React, Tailwind, Next JS and GraphQL.
           </p>
-
           <div>
             <Link
               to="portfolio"
               smooth
               duration={500}
-              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-[#5f3bab] cursor-pointer"
+              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-[#7121bd] cursor-pointer"
             >
               Portfolio
               <span className="group-hover:rotate-90 duration-300">
@@ -35,13 +37,17 @@ const Home = () => {
           </div>
         </div>
 
-        <div>
-          <img
-            src={HeroImage}
-            alt="my profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-full"
-          />
+        <div >
+          <div className="relative z-0 ml-20 md:before:absolute
+          md:before:-top-10 md:before:-left-10 md:before:rounded-t-[300px] md:before:w-full md:before:max-w-[450px] md:before:h-full md:before:border-2 md:before:z-[-1] md:before:border-[#9455cf]">
+            <img
+              src={HeroImage}
+              alt="my profile"
+              className="mx-auto w-2/3 md:w-full rounded-t-[300px] hover:filter saturate-100 hover:saturate-200 transition duration-500"
+            />
+          </div>
         </div>
+
       </div>
     </div>
   );
