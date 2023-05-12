@@ -2,10 +2,9 @@ import React from "react";
 import HeroImage from "../assets/perfil3.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
+import resume from "/resume.pdf"
 
 const Home = () => {
-  //const isAboveMediumScreens = 
-
   return (
     <div
       name="home"
@@ -18,22 +17,26 @@ const Home = () => {
             I'm a Full Stack Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-            I have 8 years of experience building and desgining software.
-            Currently, I love to work on web application using technologies like
-            React, Tailwind, Next JS and GraphQL.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, inventore! Perferendis consequatur deleniti enim maiores in officiis velit impedit tempore voluptate qui esse, doloribus, deserunt praesentium, quaerat maxime incidunt blanditiis?
           </p>
           <div>
-            <Link
-              to="portfolio"
-              smooth
-              duration={500}
+
+            <li
               className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-[#7121bd] cursor-pointer"
             >
-              Portfolio
-              <span className="group-hover:rotate-90 duration-300">
+              <a
+                href={resume}
+                className="flex justify-between items-center w-full text-white"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Descargar CV
+              </a>
+              <span className=" duration-300 group-hover:translate-x-3">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
               </span>
-            </Link>
+            </li>
+
           </div>
         </div>
 
