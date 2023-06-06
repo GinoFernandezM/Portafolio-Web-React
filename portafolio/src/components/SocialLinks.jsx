@@ -26,17 +26,17 @@ const SocialLinks = () => {
       ),
       href: "https://github.com/GinoFernandezM",
     },
-    {
+    /*{
       id: 3,
       child: (
         <>
           Mail <HiOutlineMail size={30} />
         </>
       ),
-      href: "mailto:foo@gmail.com",
-    },
+      href: "ginofm4@gmail.com",
+    },*/
     {
-      id: 4,
+      id: 3,
       child: (
         <>
           Mi CV <BsFillPersonLinesFill size={30} />

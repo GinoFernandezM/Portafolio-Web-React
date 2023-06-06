@@ -12,15 +12,23 @@ const Home = () => {
     >
       <div className=" w-5/6 m-auto flex flex-col justify-evenly items-center h-full px-2 md:flex-row">
 
-        <div className="flex flex-col justify-center h-full mr-[0px]">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            I'm a Full Stack Developer
-          </h2>
-          <p className="text-gray-500 py-4 max-w-md">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, inventore! Perferendis consequatur deleniti enim maiores in officiis velit impedit tempore voluptate qui esse, doloribus, deserunt praesentium, quaerat maxime incidunt blanditiis?
-          </p>
-          <div>
+        <div className="flex flex-col justify-center h-full mr-[0px] gap-20">
+          
+       
+            <div>
+              <h2 className="text-xl sm:text-3xl text-gray-500 py-4">
+            Hola, soy
+            </h2>
+            <h2 className="text-4xl sm:text-7xl font-bold text-white">
+            GINO FERNANDEZ
+            </h2>
+            <p className="text-xl sm:text-3xl text-gray-500 py-4">
+            Desarrollador Front-end
+            </p>
+            </div>
+     
 
+          <div>
             <li
               className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-[#7121bd] cursor-pointer"
             >
@@ -42,7 +50,7 @@ const Home = () => {
 
         <div >
           <div className="relative z-0 ml-20 md:before:absolute
-          md:before:-top-10 md:before:-left-10 md:before:rounded-t-[300px] md:before:w-full md:before:max-w-[450px] md:before:h-full md:before:border-2 md:before:z-[-1] md:before:border-[#9455cf]">
+          md:before:-top-5 md:before:-left-10 md:before:rounded-t-[300px] md:before:w-full md:before:max-w-[450px] md:before:h-full md:before:border-2 md:before:z-[-1] md:before:border-[#9455cf]">
             <img
               src={HeroImage}
               alt="my profile"

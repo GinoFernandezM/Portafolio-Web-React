@@ -4,34 +4,22 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full h-screen text-white bg-[#14141f]"
+      className="w-full h-screen text-white bg-[#14141f] "
     >
-      <div className="max-w-screen-xl p-4 mx-auto flex flex-col justify-center w-full h-full">
+      <div className="max-w-screen-xl p-4 mx-auto flex flex-col justify-center w-full h-full ">
+
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Sobre Mi
           </p>
         </div>
 
-        <p className="text-xl mt-20">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius,
-          deserunt illum mollitia officiis qui exercitationem perferendis neque
-          quasi a recusandae necessitatibus tempora iusto! Blanditiis error
-          iste, totam fugiat recusandae rerum laborum perferendis molestiae
-          aperiam asperiores nemo. Magni dolor maxime debitis vitae, eaque hic
-          ab mollitia voluptatibus, a nostrum eveniet laborum!
-        </p>
+        <div className=" w-full">
+          <p className="text-xl mt-12 flex w-9/12 mx-auto items-center flex-col">
+          Soy un desarrollador Front-end junior con experiencia en tecnologías como HTML, CSS, JavaScript, ReactJS y Tailwind. He trabajado en varios proyectos personales, donde he aplicado mis conocimientos en estas tecnologías para crear sitios web y aplicaciones web. Cuento con un portafolio donde se pueden ver mis trabajos más recientes.
+          </p>
+        </div>
 
-        <br />
-
-        <p className="text-xl">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-          pariatur, vel similique sint, nobis aspernatur ut praesentium
-          explicabo ipsam aliquid quasi laboriosam et culpa possimus repudiandae
-          quisquam ullam maiores ab unde. Fugiat odio mollitia nemo alias.
-          Commodi facilis atque nulla vero voluptatem explicabo. Quibusdam,
-          magni quo! Eum cupiditate debitis labore.
-        </p>
       </div>
     </div>
   );
