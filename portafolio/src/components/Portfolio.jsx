@@ -1,10 +1,9 @@
-import React from "react";
 import pageKFC from "../assets/portfolio/pageKFC.png"
 import pageMusic from "../assets/portfolio/pageMusic.png"
-import pagePokedex from "../assets/portfolio/pagePokedex.png"
+import carsPages from "../assets/portfolio/captura-cars-page.png"
 import gameSnake from "../assets/portfolio/gameSnake.png"
+import pageEcom from "../assets/portfolio/page-ecomerce.png"
 import pagetraker from "../assets/portfolio/pagetraker.png"
-import pageGif from "../assets/portfolio/pageGif.png"
 import pageMovie from "../assets/portfolio/pageMovie.png"
 import gameTicTacToe from "../assets/portfolio/gameTicTacToe.png"
 import {FaLink, FaGithub} from "react-icons/fa"
@@ -14,45 +13,45 @@ const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: pageKFC,
-      demo: 'https://page-kfc-gino.netlify.app/',
-      git: "https://github.com/GinoFernandezM/Portafolio/tree/main/Pagina-Web-KFC",
-      skill: "HTML | CSS | JS",
+      src: carsPages,
+      demo: 'https://cars-page-gino.vercel.app/',
+      git: "https://github.com/GinoFernandezM/Cars-Page",
+      skill: "Tailwind| NextJS| Typescript",
     },
     {
       id: 2,
-      src: pageMusic,
-      demo: 'https://page-music-gino.netlify.app/',
-      git: "https://github.com/GinoFernandezM/Portafolio/tree/main/Music-Player",
-      skill: "HTML | CSS | JS",
-    },
-    {
-      id: 3,
-      src: pagePokedex,
-      demo: 'https://page-pokedex-gino.netlify.app/',
-      git: "https://github.com/GinoFernandezM/Portafolio/tree/main/Pokedex",
-      skill: "HTML | CSS | JS",
-    },
-    {
-      id: 4,
-      src: gameSnake,
-      demo: 'https://game-snake-gino.netlify.app/',
-      git: "https://github.com/GinoFernandezM/Portafolio/tree/main/Snake",
-      skill: "HTML | CSS | JS",
-    },
-    {
-      id: 5,
       src: pagetraker,
       demo: 'https://page-traker-gino.netlify.app/',
       git: "https://github.com/GinoFernandezM/Portafolio-Web-React/tree/main/subscription-tracker-react",
       skill: "HTML | CSS | JS | ReactJS",
     },
     {
+      id: 3,
+      src: pageKFC,
+      demo: 'https://page-kfc-gino.netlify.app/',
+      git: "https://github.com/GinoFernandezM/Portafolio/tree/main/Pagina-Web-KFC",
+      skill: "HTML | CSS | JS",
+    },
+    {
+      id: 4,
+      src: pageEcom,
+      demo: 'https://e-commerce-shopy.netlify.app/',
+      git: "https://github.com/GinoFernandezM/Portafolio-Web-React/tree/main/store-online",
+      skill: "HTML | CSS | JS | ReactJS| Tailwind",
+    },
+    {
+      id: 5,
+      src: pageMusic,
+      demo: 'https://page-music-gino.netlify.app/',
+      git: "https://github.com/GinoFernandezM/Portafolio/tree/main/Music-Player",
+      skill: "HTML | CSS | JS",
+    },
+    {
       id: 6,
-      src: pageGif,
-      demo: 'https://page-gif-gino.netlify.app/',
-      git: "https://github.com/GinoFernandezM/Portafolio-Web-React/tree/main/gif-maker-react",
-      skill: "HTML | CSS | JS | ReactJS",
+      src: gameSnake,
+      demo: 'https://game-snake-gino.netlify.app/',
+      git: "https://github.com/GinoFernandezM/Portafolio/tree/main/Snake",
+      skill: "HTML | CSS | JS",
     },
     {
       id: 7,
@@ -100,8 +99,8 @@ const Portfolio = () => {
                   </p>
                 </div>
                 <div className="flex gap-5 py-3 m-3">
-                  <a href={demo} target="_blank" className="hover:text-[#dac822] hover:scale-150 transition-all duration-300"><FaLink/></a>
-                  <a href={git} target="_blank" className="hover:text-[#dac822] hover:scale-150 transition-all duration-300"><FaGithub/></a>
+                  <a href={demo} target="_blank" rel='noreferrer' className="hover:text-[#dac822] hover:scale-150 transition-all duration-300"><FaLink/></a>
+                  <a href={git} target="_blank" rel='noreferrer' className="hover:text-[#dac822] hover:scale-150 transition-all duration-300"><FaGithub/></a>
                 </div>
                 {/*<button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   <a href={demo} target="_blank">Demo</a>
